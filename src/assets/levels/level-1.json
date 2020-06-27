@@ -1,0 +1,293 @@
+{
+  "bricks": [
+    {
+      "x": 16,
+      "y": 224,
+      "texture": "brick"
+    },
+    {
+      "x": 16,
+      "y": 208,
+      "texture": "brick"
+    },
+    {
+      "x": 16,
+      "y": 192,
+      "texture": "brick"
+    },
+    {
+      "x": 16,
+      "y": 176,
+      "texture": "brick"
+    },
+    {
+      "x": 64,
+      "y": 224,
+      "texture": "brick"
+    },
+    {
+      "x": 64,
+      "y": 192,
+      "texture": "brick"
+    },
+    {
+      "x": 64,
+      "y": 144,
+      "texture": "brick"
+    },
+    {
+      "x": 48,
+      "y": 144,
+      "texture": "brick"
+    },
+    {
+      "x": 32,
+      "y": 144,
+      "texture": "brick"
+    },
+    {
+      "x": 96,
+      "y": 224,
+      "texture": "brick"
+    },
+    {
+      "x": 160,
+      "y": 224,
+      "texture": "brick"
+    },
+    {
+      "x": 144,
+      "y": 224,
+      "texture": "brick"
+    },
+    {
+      "x": 128,
+      "y": 224,
+      "texture": "brick"
+    },
+    {
+      "x": 128,
+      "y": 208,
+      "texture": "brick"
+    },
+    {
+      "x": 160,
+      "y": 208,
+      "texture": "brick"
+    },
+    {
+      "x": 128,
+      "y": 160,
+      "texture": "brick"
+    },
+    {
+      "x": 160,
+      "y": 160,
+      "texture": "brick"
+    },
+    {
+      "x": 160,
+      "y": 144,
+      "texture": "brick"
+    },
+    {
+      "x": 160,
+      "y": 128,
+      "texture": "brick"
+    },
+    {
+      "x": 160,
+      "y": 80,
+      "texture": "brick"
+    },
+    {
+      "x": 160,
+      "y": 64,
+      "texture": "brick"
+    },
+    {
+      "x": 128,
+      "y": 80,
+      "texture": "brick"
+    },
+    {
+      "x": 128,
+      "y": 64,
+      "texture": "brick"
+    },
+    {
+      "x": 64,
+      "y": 32,
+      "texture": "brick"
+    },
+    {
+      "x": 80,
+      "y": 32,
+      "texture": "brick"
+    },
+    {
+      "x": 80,
+      "y": 16,
+      "texture": "brick"
+    },
+    {
+      "x": 16,
+      "y": 32,
+      "texture": "brick"
+    },
+    {
+      "x": 16,
+      "y": 16,
+      "texture": "brick"
+    },
+    {
+      "x": 32,
+      "y": 80,
+      "texture": "brick"
+    },
+    {
+      "x": 48,
+      "y": 80,
+      "texture": "brick"
+    },
+    {
+      "x": 64,
+      "y": 80,
+      "texture": "brick"
+    },
+    {
+      "x": 48,
+      "y": 96,
+      "texture": "brick"
+    }
+  ],
+  "blocks": [
+    {
+      "x": 0,
+      "y": 160,
+      "texture": "block"
+    },
+    {
+      "x": 64,
+      "y": 176,
+      "texture": "block"
+    },
+    {
+      "x": 64,
+      "y": 160,
+      "texture": "block"
+    },
+    {
+      "x": 144,
+      "y": 160,
+      "texture": "block"
+    },
+    {
+      "x": 128,
+      "y": 96,
+      "texture": "block"
+    },
+    {
+      "x": 144,
+      "y": 80,
+      "texture": "block"
+    },
+    {
+      "x": 80,
+      "y": 0,
+      "texture": "block"
+    },
+    {
+      "x": 128,
+      "y": 16,
+      "texture": "block"
+    },
+    {
+      "x": 144,
+      "y": 16,
+      "texture": "block"
+    },
+    {
+      "x": 160,
+      "y": 16,
+      "texture": "block"
+    },
+    {
+      "x": 96,
+      "y": 112,
+      "texture": "block"
+    }
+  ],
+  "bushes": [
+    {
+      "x": 32,
+      "y": 112,
+      "texture": "bush"
+    },
+    {
+      "x": 32,
+      "y": 128,
+      "texture": "bush"
+    },
+    {
+      "x": 64,
+      "y": 112,
+      "texture": "bush"
+    },
+    {
+      "x": 64,
+      "y": 128,
+      "texture": "bush"
+    },
+    {
+      "x": 32,
+      "y": 96,
+      "texture": "bush"
+    },
+    {
+      "x": 64,
+      "y": 96,
+      "texture": "bush"
+    },
+    {
+      "x": 48,
+      "y": 112,
+      "texture": "bush"
+    },
+    {
+      "x": 48,
+      "y": 128,
+      "texture": "bush"
+    },
+    {
+      "x": 128,
+      "y": 112,
+      "texture": "bush"
+    },
+    {
+      "x": 144,
+      "y": 112,
+      "texture": "bush"
+    },
+    {
+      "x": 144,
+      "y": 96,
+      "texture": "bush"
+    },
+    {
+      "x": 160,
+      "y": 96,
+      "texture": "bush"
+    },
+    {
+      "x": 16,
+      "y": 48,
+      "texture": "bush"
+    },
+    {
+      "x": 16,
+      "y": 64,
+      "texture": "bush"
+    }
+  ]
+}

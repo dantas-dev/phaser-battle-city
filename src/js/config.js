@@ -10,6 +10,12 @@ const config = {
     height: 240,
     mode: Phaser.Scale.FIT, // se "encaixa" no espaço disponivel da tela
     autoCenter: Phaser.Scale.CENTER_BOTH, // centraliza a tela do jogo
+  },
+  physics: {
+    default: 'arcade',
+    arcade: {
+      debug: true,
+    }
   }
 }
 
