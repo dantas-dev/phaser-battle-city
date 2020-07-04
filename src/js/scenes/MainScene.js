@@ -1,9 +1,17 @@
+import { direction, speed } from '../config.js';
+
 export default class MainScene extends Phaser.Scene {
   constructor(key) {
     super(key);
   }
 
-  init () {}
+  init () {
+    /*
+      método auxiliar do Phaser que nos retorna um objeto
+      com os direcionais e a barra de espaço e o shift
+    */
+    this.cursors = this.input.keyboard.createCursorKeys();
+  }
 
   preload () {
     this.load.spritesheet('player', './src/assets/player.png', {
@@ -28,9 +36,13 @@ export default class MainScene extends Phaser.Scene {
   create () {
     this.createCursorPointer();
     this.createMap();
+    this.createPlayer();
   }
 
-  update () {}
+  update () {
+    this.movePlayer();
+    this.checkCollisions();
+  }
 
   createCursorPointer () {
     // tamanho do nosso TILE 16x16
@@ -94,8 +106,56 @@ export default class MainScene extends Phaser.Scene {
     });
 
     bushes.forEach((bush) => {
-      const newBush = this.add.image(bush.x, bush.y, bush.texture).setOrigin(0);
+      const newBush = this.add.image(bush.x, bush.y, bush.texture)
+        .setOrigin(0)
+        .setDepth(1);
       this.bushesGroup.add(newBush);
     });
+  }
+
+  createPlayer() {
+    // cria player já com corpo fisico
+    this.player = this.physics.add.sprite(96, 192, 'player', 0).setOrigin(0);
+
+    // Adicionando propriedades extras ao nosso this.player
+    this.player.direction = direction.UP;
+  }
+
+  movePlayer () {
+    const { left, right, up, down } = this.cursors;
+
+    // se o jogador não estiver pressionando nenhuma tecla, 
+    // a velocidade dele ira sempre ser 0
+    this.player.setVelocity(0);
+
+    if (up.isDown) {
+      this.player.direction = direction.UP;
+      this.player.flipY = false;
+      this.player.setFrame(0);
+      this.player.setVelocityY(-speed.PLAYER);
+    } else if (down.isDown) {
+      this.player.direction = direction.DOWN;
+      this.player.flipY = true;
+      this.player.setFrame(0);
+      this.player.setVelocityY(speed.PLAYER);
+    } else if (left.isDown) {
+      this.player.direction = direction.LEFT;
+      this.player.flipX = true;
+      this.player.setFrame(1);
+      this.player.setVelocityX(-speed.PLAYER);
+    } else if (right.isDown) {
+      this.player.direction = direction.RIGHT;
+      this.player.flipX = false;
+      this.player.setFrame(1);
+      this.player.setVelocityX(speed.PLAYER);
+    }
+  }
+
+  checkCollisions() {
+    // ativa colisões do jogador com as bordas do jogo
+    this.player.setCollideWorldBounds(true); 
+
+    // ativa colisões do jogador com os tijolos e blocos
+    this.physics.add.collider(this.player, [this.bricksGroup, this.blocksGroup]);
   }
 }

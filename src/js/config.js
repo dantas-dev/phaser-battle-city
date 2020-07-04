@@ -19,6 +19,21 @@ const config = {
   }
 }
 
+const direction = {
+  RIGHT: 0,
+  LEFT: 1,
+  UP: 2,
+  DOWN: 3,
+};
+
+const speed = {
+  PLAYER: 30,
+  ENEMY: 20,
+  BULLET: 100,
+}
+
 export {
   config,
+  direction,
+  speed,
 }
