@@ -14,7 +14,7 @@ const config = {
   physics: {
     default: 'arcade',
     arcade: {
-      debug: true,
+      debug: false,
     }
   }
 }
@@ -32,8 +32,14 @@ const speed = {
   BULLET: 100,
 }
 
+const time = {
+  ENEMY_INTERVAL: 1000,
+  PLAYER_INTERVAL: 1000,
+}
+
 export {
   config,
   direction,
   speed,
+  time,
 }
